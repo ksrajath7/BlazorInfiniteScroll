@@ -7,13 +7,16 @@
 		<Version>1.0.0</Version>
 		<Authors>Rajath KS</Authors>
 		<Company>Epoq Zero</Company>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<Description>A Blazor infinite scroll component.</Description>
 		<PackageTags>blazor, infinite scroll, component</PackageTags>
 		<RepositoryUrl>https://github.com/ksrajath7/BlazorInfiniteScroll</RepositoryUrl>
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
 	</PropertyGroup>
-
+	<ItemGroup>
+		<None Include="docs\README.md" Pack="true" PackagePath="\"/>
+	</ItemGroup>
 
 	<ItemGroup>
 		<SupportedPlatform Include="browser" />
