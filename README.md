@@ -21,7 +21,7 @@ To install the Blazor Infinite Scroll package, follow these steps:
    dotnet add package BlazorInfiniteScroll --version 1.0.0
 
 2. **Usage**
-  ```cmd
+```razor
 <InfiniteScroll 
     ClassName="custom-scroll" 
     Style="height:400px;" 
