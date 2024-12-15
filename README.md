@@ -19,3 +19,44 @@ To install the Blazor Infinite Scroll package, follow these steps:
 
    ```cmd
    dotnet add package BlazorInfiniteScroll --version 1.0.0
+
+2. **Usage**
+```razor
+@* Example with normal list of items *@
+<InfiniteScroll 
+    ClassName="custom-scroll" 
+    Style="height:400px;" 
+    ObserverId="observer1" 
+    ScrollBoxId="scrollBox1" 
+    HasAnythingExistToLoadMore="true" 
+    IsLoadingMore="false" 
+    IsInfiniteLoadingNeeded="true" 
+    OnEndReached="HandleEndReached">
+   @foreach(var item in YourList){
+
+   }
+</InfiniteScroll>
+
+@* Example with virtualized list of items *@
+<InfiniteScroll 
+    ClassName="custom-scroll" 
+    Style="height:400px;" 
+    ObserverId="observer1" 
+    ScrollBoxId="scrollBox1" 
+    HasAnythingExistToLoadMore="true" 
+    IsLoadingMore="false" 
+    IsInfiniteLoadingNeeded="true" 
+    OnEndReached="HandleEndReached">
+   <Virtualize Items="YourList" Context="item">
+
+   </Virtualize>
+</InfiniteScroll>
+@code {
+    private async Task HandleEndReached(bool isVisible)
+    {
+        if (isVisible)
+        {
+            // Load more content
+        }
+    }
+}
