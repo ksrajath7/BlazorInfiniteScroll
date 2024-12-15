@@ -4,7 +4,7 @@
 		<TargetFramework>net8.0</TargetFramework>
 		<RootNamespace>BlazorInfiniteScroll</RootNamespace>
 		<PackageId>BlazorInfiniteScroll</PackageId>
-		<Version>1.0.1</Version>
+		<Version>1.0.2</Version>
 		<Authors>Rajath KS</Authors>
 		<Company>Epoq Zero</Company>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
