@@ -18,7 +18,7 @@ To install the Blazor Infinite Scroll package, follow these steps:
    You can add the package to your Blazor project by running the following command in your project directory:
 
    ```cmd
-   dotnet add package BlazorInfiniteScroll --version 1.0.0
+   dotnet add package BlazorInfiniteScroll
 
 2. **Usage**
 ```razor
