@@ -32,17 +32,18 @@ To install the Blazor Infinite Scroll package, follow these steps:
     IsLoadingMore="false" 
     IsInfiniteLoadingNeeded="true" 
     OnEndReached="HandleEndReached">
-   @foreach(var item in YourList){
-
-   }
+      @foreach(var item in YourList){
+    
+      }
+    <div id="observer1"></div>
 </InfiniteScroll>
 
 @* Example with virtualized list of items *@
 <InfiniteScroll 
     ClassName="custom-scroll" 
     Style="height:400px;" 
-    ObserverId="observer1" 
-    ScrollBoxId="scrollBox1" 
+    ObserverId="observer2" 
+    ScrollBoxId="scrollBox2" 
     HasAnythingExistToLoadMore="true" 
     IsLoadingMore="false" 
     IsInfiniteLoadingNeeded="true" 
@@ -50,6 +51,7 @@ To install the Blazor Infinite Scroll package, follow these steps:
    <Virtualize Items="YourList" Context="item">
 
    </Virtualize>
+   <div id="observer2"></div>
 </InfiniteScroll>
 @code {
     private async Task HandleEndReached(bool isVisible)
