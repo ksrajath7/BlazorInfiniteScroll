@@ -19,3 +19,26 @@ To install the Blazor Infinite Scroll package, follow these steps:
 
    ```cmd
    dotnet add package BlazorInfiniteScroll --version 1.0.0
+
+2. **Usage**
+`<InfiniteScroll 
+    ClassName="custom-scroll" 
+    Style="height:400px;" 
+    ObserverId="observer1" 
+    ScrollBoxId="scrollBox1" 
+    HasAnythingExistToLoadMore="true" 
+    IsLoadingMore="false" 
+    IsInfiniteLoadingNeeded="true" 
+    OnEndReached="HandleEndReached">
+    <!-- Your content here -->
+</InfiniteScroll>
+
+@code {
+    private async Task HandleEndReached(bool isVisible)
+    {
+        if (isVisible)
+        {
+            // Load more content
+        }
+    }
+}`
