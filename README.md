@@ -1,4 +1,4 @@
-# Blazor Infinite Scroll
+# Blazor Infinite Scroll (1.0.1)
 
 Blazor Infinite Scroll is a Blazor component that provides an easy-to-use infinite scroll functionality. It triggers events when the user scrolls to the end of a content container, allowing you to load more content dynamically.
 
